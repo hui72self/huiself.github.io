@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>.banner {
+        background-color: #b684caec;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        font-family: Arial, sans-serif;
+    }
+    </style>
+</head>
+<body bgcolor="lavender">
+    <header class="banner">
+        <h1> Hello!你好呀!!!<BR>
+            欢迎来到我的主页</h1>
+    </header>
+    <header>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="junior.html" >初中</a>
+            <a href="senior.html">高中</a>
+        </nav>
+    </header>
+    
+    </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: lavender;
+        }
+
+        .image-row {
+            display: flex;         
+            justify-content: space-between; 
+            gap: 20px;          
+            flex-wrap: wrap;      
+        }
+
+        .image-card {
+            flex: 0 0 calc(30% - 10px); 
+            text-align: center;      
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .image-card img {
+            width: 100%;        
+            height: auto;       
+            border-radius: 5px;
+            object-fit: cover;    
+            aspect-ratio: 4/3;     
+        }
+
+        .image-card a {
+            display: block; 
+            margin-top: 10px;
+            color: #b684caec;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .image-card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .image-card {
+                flex: 0 0 100%; 
+            }
+        }
+    </style>
+</body>
+
+<body>
+    <div class="image-row">
+        <div class="image-card">
+            <img src="伯乐中学.jpg">
+            <a href="http://www.njblzx.com/">我的初中</a>
+        </div>
+
+        <div class="image-card">
+            <img src="金陵中学.jpg">
+            <a href="http://www.jlhs.net/">我的高中</a>
+        </div>
+
+        <div class="image-card">
+            <img src="华中科技大学.jpg">
+            <a href="https://www.hust.edu.cn/">我的大学</a>
+        </div>
+    </div>
+</body>
+    <section id="contact">
+        <h2>个人信息</h2>
+        <p>班级:环卓2401<BR>
+           姓名:余佳卉<BR>
+           学号:U202415254<BR>
+           邮箱:1772404382@qq.com<BR>
+           电话:1381749718</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
